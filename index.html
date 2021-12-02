@@ -13,13 +13,80 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <link rel="shortcut icon" href="favicon.png" type="image/png">
+
+    <Style>
+        body {
+            background-color: white
+        }
+        main {
+            Display: inline-block;
+            Width: 80%;
+            margin-left: 10%;
+        }
+        header {
+            display: inline-block;
+            width: 100%;
+            margin-top: 20px;
+        }
+        header>img {
+           float: left;
+           height: 30px;
+        }
+        nav {
+           float: right;
+           margin-top: 10px;
+       }
+       a {
+        text-decoration: none;
+           color: midnightblue;
+           float:right
+           font-size: 20px;
+           line-height: 20px;
+           padding-top: 5px;
+           padding-bottom: 5px;
+           padding-left: 20px;
+           padding-right: 20px;
+           border: 3px solid transparent;
+           border-radius: 4px;
+       }
+       a:hover {
+           color: red;
+       }
+       section {
+           display: inline-block;
+           width: 100%;
+           margin-top: 30px;
+       }
+       div {
+           float: left;
+       }
+
+       h1 {
+           font-size: 40px;
+           float: left;
+           margin-right: 60%;
+           color: midnightblue;
+       }
+       p {
+           margin-right: 60%;
+           font-size:20px;
+           color: black
+       }
+       section>img {
+           float: right;
+           width: 40%;
+           margin-left: 5%;
+           margin-right: 5%;
+        }
+
+    </Style>
 </head>
 <body>
     <main>
         <header> 
             <img src="./logo.png" alt="Logotipas">
             <nav>
-                <a href="#">Home</a> 
+                <a href="#" style="text-decoration: underline; text-decoration-color: red;">Home</a> 
                 <a href="#">Instructors</a>
                 <a href="#">Schedule</a>
                 <a href="#">About studio</a>
@@ -29,12 +96,19 @@
         </header>
         <section>
             <div>
-                <h1>Welcome to Yoga Lifestyle studio!</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis excepturi quibusdam velit odio sed tenetur nemo provident, et ex id?</p>
+                <h1>Welcome to Yoga <font color="red"> Lifestyle </font> studio!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis excepturi quibusdam velit odio sed tenetur nemo provident, et ex id?</p
             </div>
-            <a href="#">Sign up for classes</a>
-            <img src="#" alt="yoga">
             
+            <nav>
+                <a href="#"
+                style="background-color: red;
+                color: white;
+                font-family: Georgia, 'Times New Roman', Times, serif;" >
+                Sign up for classes
+                </a>  
+            </nav>
+            <img src="./drawing.png" alt="yoga">
         </section>
     </main>
 </body>
