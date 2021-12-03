@@ -1,57 +1,96 @@
 :root {
-    --organize: red;
+    --orandzine: #ff4622;
+    --plotis: 1000px;
+    --soninis-atstumas: calc((100% - var(--plotis)) / 2);
+    --main-width: calc(var(--plotis) + var(--soninis-atstumas));
+    --text-width: calc(var(--plotis) * 0.4);
+    --text-margin: calc(var(--plotis) * 0.1);
+    --image-width: calc(100% - var(--plotis) / 2);
 }
+
 body {
-font-family: cursive
+    font-family: cursive;
 }
 
 header {
     display: inline-block;
-    width: 100%;
-    margin-left: calc(50% - 500px);
+    width: var(--plotis);
+    margin-left: var(--soninis-atstumas);
 }
+
 header > img {
-        float: left;
-        height: 40px;
+    float: left;
+    height: 40px;
 }
+
 nav {
     float: right;
     margin-top: 20px;
 }
+
 nav > a {
- font-size: 18px;
- line-height: 20px;
- text-decoration: none;
- color: midnightblue;
- margin-left: 20px;
- border-bottom: 3px solid transparent;
+    font-size: 18px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #2c253e;
+    margin-left: 20px;
+    border-bottom: 3px solid transparent;
 }
 
 nav > a:hover {
-border-color: red;
+    color: white;
+    border-color: var(--orandzine);
 }
+
 nav > a:first-child {
-   margin-left: 0;
-   border-color: red;
+    margin-left: 0;
+    border-color: var(--orandzine);
 }
+
 main {
-
+    display: inline-block;
+    width: var(--main-width);
+    margin-left: var(--soninis-atstumas);
+    margin-top: 60px;
 }
+
 div {
-
+    float: left;
+    width: var(--text-width);
+    margin-right: var(--text-margin);
 }
+
 h1 {
+    display: inline-block;
+    width: 100%;
+    font-size: 40px;
+    margin 0;
 
 }
-h1>span {
 
+h1 > span {
+    color: var(--orandzine);
 }
+
 p {
-   font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-div > a {
 
+div > a {
+    display: inline-block;
+    padding: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
+    color: white;
+    background-color: var(--orandzine);
+    text-decoration: none;
+    border: 1px solid red;
+    border-radius: 4px;
 }
+
 main > img {
-width: 100%;
+    float: left;
+    width: var(--image-width);
 }
